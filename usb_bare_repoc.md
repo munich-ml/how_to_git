@@ -66,17 +66,23 @@ Jetzt enthält das Bare-Repo den vollständigen Stand.
 
 ## 4️⃣ Nebensystem – Repository vom USB klonen (einmalig)
 
-USB-Stick einstecken:
+USB-Stick einstecken und evtl. mounten:
+
+```bash
+sudo mount -t drvfs E: /mnt/e
+ls /mnt
+```
 
 ```bash
 git clone /pfad/zum/usb/projekt.git projekt
 cd projekt
 ```
 
-Optional Remote prüfen:
+Aktualisieren und gewünschten auschecken (verm. `main`):
 
 ```bash
-git remote -v
+git fetch --all --tags
+git chechout main
 ```
 
 ---
