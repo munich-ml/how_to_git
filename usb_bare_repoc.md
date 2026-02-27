@@ -82,7 +82,7 @@ Aktualisieren und gewünschten auschecken (verm. `main`):
 
 ```bash
 git fetch --all --tags
-git chechout main
+git checkout main
 ```
 
 ---
