@@ -114,8 +114,7 @@ git push origin --tags
 USB-Stick wieder am Hauptsystem anschließen:
 
 ```bash
-git fetch usb --all
-git fetch usb --tags
+git fetch usb
 ```
 
 Branches anzeigen:
