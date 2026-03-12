@@ -113,29 +113,17 @@ git push origin --tags
 
 USB-Stick wieder am Hauptsystem anschließen:
 
-```bash
-git fetch usb
-```
-
-Branches anzeigen:
-
-```bash
-git branch -r
-```
-
-Branch lokal übernehmen:
-
-```bash
-git checkout -b feature/offline-x usb/feature/offline-x
-```
-
-Oder direkt mergen:
-
-```bash
-git checkout main
-git merge usb/feature/offline-x
-```
-
+- Entweder
+  ```bash
+  git fetch usb
+  git checkout feature_branch
+  git merge usb/feature_branch
+  ```
+  
+- Oder 
+  ```bash
+  git pull usb feature_branch
+  ```
 ---
 
 ## 7️⃣ Hauptsystem – Optional zu GitLab pushen
